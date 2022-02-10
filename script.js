@@ -7,9 +7,11 @@ let B;
 let C;
 let D;
 let R;
+let G;
 let password = "";
+let passwordPlace = document.getElementById("passwordPlace");
 function createPassword(){
-    while(password.length != 5){
+    while(password.length != G){
     R = Math.floor(Math.random() * (5 -1) + 1);
     console.log(R);
     switch(R){
@@ -37,4 +39,9 @@ function createPassword(){
     document.write(password);
 }}
 
-createPassword();
+//createPassword();
+function buttonCreate(){
+    G = document.getElementById("lenghtOfPasswords").value;
+    createPassword();
+
+}

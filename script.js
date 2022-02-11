@@ -36,11 +36,12 @@ function createPassword(){
             password = password.concat(D);
             break;
     }
-    document.write(password);
+    passwordPlace.innerHTML = password;
 }}
 
 //createPassword();
 function buttonCreate(){
+    passwordPlace.innerHTML = "<p>Creating Password</p>";
     G = document.getElementById("lenghtOfPasswords").value;
     createPassword();
 
